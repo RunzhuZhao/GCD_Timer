@@ -14,10 +14,11 @@
 		A700DE272B610D9300DF01D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A700DE262B610D9300DF01D3 /* Assets.xcassets */; };
 		A700DE2A2B610D9300DF01D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A700DE282B610D9300DF01D3 /* LaunchScreen.storyboard */; };
 		A700DE2D2B610D9300DF01D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A700DE2C2B610D9300DF01D3 /* main.m */; };
+		A700DE352B6121F900DF01D3 /* FTTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A700DE342B6121F900DF01D3 /* FTTimerManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A700DE172B610D9200DF01D3 /* GCD_Semaphore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCD_Semaphore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A700DE172B610D9200DF01D3 /* GCD_Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCD_Timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A700DE1A2B610D9200DF01D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A700DE1B2B610D9200DF01D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A700DE1D2B610D9200DF01D3 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -29,6 +30,8 @@
 		A700DE292B610D9300DF01D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A700DE2B2B610D9300DF01D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A700DE2C2B610D9300DF01D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A700DE332B6121F900DF01D3 /* FTTimerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTTimerManager.h; sourceTree = "<group>"; };
+		A700DE342B6121F900DF01D3 /* FTTimerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTTimerManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +48,7 @@
 		A700DE0E2B610D9200DF01D3 = {
 			isa = PBXGroup;
 			children = (
-				A700DE192B610D9200DF01D3 /* GCD_Semaphore */,
+				A700DE192B610D9200DF01D3 /* GCD_Timer */,
 				A700DE182B610D9200DF01D3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,12 +56,12 @@
 		A700DE182B610D9200DF01D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A700DE172B610D9200DF01D3 /* GCD_Semaphore.app */,
+				A700DE172B610D9200DF01D3 /* GCD_Timer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A700DE192B610D9200DF01D3 /* GCD_Semaphore */ = {
+		A700DE192B610D9200DF01D3 /* GCD_Timer */ = {
 			isa = PBXGroup;
 			children = (
 				A700DE1A2B610D9200DF01D3 /* AppDelegate.h */,
@@ -67,21 +70,23 @@
 				A700DE1E2B610D9200DF01D3 /* SceneDelegate.m */,
 				A700DE202B610D9200DF01D3 /* ViewController.h */,
 				A700DE212B610D9200DF01D3 /* ViewController.m */,
+				A700DE332B6121F900DF01D3 /* FTTimerManager.h */,
+				A700DE342B6121F900DF01D3 /* FTTimerManager.m */,
 				A700DE232B610D9200DF01D3 /* Main.storyboard */,
 				A700DE262B610D9300DF01D3 /* Assets.xcassets */,
 				A700DE282B610D9300DF01D3 /* LaunchScreen.storyboard */,
 				A700DE2B2B610D9300DF01D3 /* Info.plist */,
 				A700DE2C2B610D9300DF01D3 /* main.m */,
 			);
-			path = GCD_Semaphore;
+			path = GCD_Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A700DE162B610D9200DF01D3 /* GCD_Semaphore */ = {
+		A700DE162B610D9200DF01D3 /* GCD_Timer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A700DE302B610D9300DF01D3 /* Build configuration list for PBXNativeTarget "GCD_Semaphore" */;
+			buildConfigurationList = A700DE302B610D9300DF01D3 /* Build configuration list for PBXNativeTarget "GCD_Timer" */;
 			buildPhases = (
 				A700DE132B610D9200DF01D3 /* Sources */,
 				A700DE142B610D9200DF01D3 /* Frameworks */,
@@ -91,9 +96,9 @@
 			);
 			dependencies = (
 			);
-			name = GCD_Semaphore;
+			name = GCD_Timer;
 			productName = GCD_Semaphore;
-			productReference = A700DE172B610D9200DF01D3 /* GCD_Semaphore.app */;
+			productReference = A700DE172B610D9200DF01D3 /* GCD_Timer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,6 +108,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = FT;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					A700DE162B610D9200DF01D3 = {
@@ -110,7 +116,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A700DE122B610D9200DF01D3 /* Build configuration list for PBXProject "GCD_Semaphore" */;
+			buildConfigurationList = A700DE122B610D9200DF01D3 /* Build configuration list for PBXProject "GCD_Timer" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,7 +129,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A700DE162B610D9200DF01D3 /* GCD_Semaphore */,
+				A700DE162B610D9200DF01D3 /* GCD_Timer */,
 			);
 		};
 /* End PBXProject section */
@@ -149,6 +155,7 @@
 				A700DE222B610D9200DF01D3 /* ViewController.m in Sources */,
 				A700DE1C2B610D9200DF01D3 /* AppDelegate.m in Sources */,
 				A700DE2D2B610D9300DF01D3 /* main.m in Sources */,
+				A700DE352B6121F900DF01D3 /* FTTimerManager.m in Sources */,
 				A700DE1F2B610D9200DF01D3 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +301,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9AJNN8Z23J;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GCD_Semaphore/Info.plist;
+				INFOPLIST_FILE = GCD_Timer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -305,7 +312,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "run.GCD-Semaphore";
+				PRODUCT_BUNDLE_IDENTIFIER = "run.GCD-Timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,7 +328,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9AJNN8Z23J;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GCD_Semaphore/Info.plist;
+				INFOPLIST_FILE = GCD_Timer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -332,7 +339,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "run.GCD-Semaphore";
+				PRODUCT_BUNDLE_IDENTIFIER = "run.GCD-Timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,7 +349,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A700DE122B610D9200DF01D3 /* Build configuration list for PBXProject "GCD_Semaphore" */ = {
+		A700DE122B610D9200DF01D3 /* Build configuration list for PBXProject "GCD_Timer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A700DE2E2B610D9300DF01D3 /* Debug */,
@@ -351,7 +358,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A700DE302B610D9300DF01D3 /* Build configuration list for PBXNativeTarget "GCD_Semaphore" */ = {
+		A700DE302B610D9300DF01D3 /* Build configuration list for PBXNativeTarget "GCD_Timer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A700DE312B610D9300DF01D3 /* Debug */,
